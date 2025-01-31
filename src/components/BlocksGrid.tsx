@@ -1,5 +1,4 @@
 import { BlockType } from "../types";
-import { Dispatch, SetStateAction } from "react";
 import { BoardItemType } from "../types";
 
 const BlocksGrid = ({
@@ -7,7 +6,7 @@ const BlocksGrid = ({
   setBoardItems,
 }: {
   blocks: BlockType[];
-  setBoardItems: Dispatch<SetStateAction<BoardItemType[]>>;
+  setBoardItems: React.Dispatch<React.SetStateAction<BoardItemType[]>>;
 }) => {
   const handleAddBoardItem = (block: BlockType) => {
     setBoardItems((prev) => [
